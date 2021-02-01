@@ -18,7 +18,7 @@ h1{
 
 .formulario{
     background-image: url( '../../assets/login_box.png');
-    min-height: 380px;
+    min-height: 450px;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ h1{
     max-width: 300px;
     padding: 16px;   
     right: -43%;
-    padding-top: 80px;
+    padding-top: 110px;
   }
 
   input[type=text], input[type=password], .campo, .btn-login{

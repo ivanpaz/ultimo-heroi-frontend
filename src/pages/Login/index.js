@@ -33,13 +33,14 @@ function Login(){
         e.preventDefault();
        
         try{
+            console.log(name, password);
             const response = await api.post('login', {name, password});
-           
-            localStorage.setItem('userId', response.data[0].id);
+           console.log(response.data);
+           /* localStorage.setItem('userId', response.data[0].id);
             localStorage.setItem('userName', response.data[0].name);
             localStorage.setItem('userCapitan', response.data[0].capitan);
             localStorage.setItem('userImage', response.data[0].image);
-            localStorage.setItem('userScore', response.data[0].score);
+            localStorage.setItem('userScore', response.data[0].score);*/
 
             history.push('/menu');
             
