@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 400 14px Roboto, sans-serif;
+    background: #EFE8DD;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+input, button, textarea, .linha-texto, .btn-circle{
+    font: 400 18px Roboto, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+h1{
+    color: black;
+}
+
+.btn-circle {
+    
+    height: 30px;
+    /*padding: 6px 15px;*/
+    border-radius: 50px;
+    text-align: center;
+    
+    line-height: 1.42857;
+    color: rgb(0, 0, 0);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}

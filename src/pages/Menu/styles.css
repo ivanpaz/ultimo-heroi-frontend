@@ -1,0 +1,52 @@
+.container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+    background-color: #333333;
+}
+
+.box-menu{
+    background-image: url( '../../assets/menu_box.png');
+   
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    max-width: 1298px;
+}
+
+.btn-bar{
+    position: relative;
+    left: 224px;
+    display: flex;
+    flex-wrap: nowrap;
+    left: 1%;
+}
+
+.btn-mounth{
+   background-color: blueviolet;
+    opacity: 0.5;
+    width: 106px;
+    height: 75px;
+}
+
+
+.user-info{
+    background-color: chartreuse;
+    opacity: 0.5;
+    width: 100%;
+    height: 650px;
+    padding: 25px;
+}
+
+.brasao{
+    background-color: #9B978F;
+    width: 314px;
+    height: 400px;
+}

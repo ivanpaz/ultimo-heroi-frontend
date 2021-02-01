@@ -1,0 +1,130 @@
+.container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+    background-color: #333333;
+}
+
+.box-mission{
+    content:url('../../assets/missao_box.png');
+   
+    height: 750px;
+    /* Center and scale the image nicely */
+    
+    position: absolute;
+    top: 5%;
+    z-index: -1;
+}
+
+.box-container{
+    margin-top: 5%;
+    z-index: 1;
+    position: relative;
+    left: 40%;
+    width: 500px;
+    flex-direction: row;
+}
+
+.mission-mounth{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.mission-element {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+   
+    padding: 10px;
+  }
+
+.mission-number{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+   
+    padding: 5px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
+}
+
+.mission-area{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.anex-btn{
+    position: relative;
+    left: -60px;
+    padding-top: 60%;
+}
+
+textarea{
+    background-color: #EDDEAD;
+}
+
+.btn-back{
+  content:url('../../assets/btn-back.png');
+   
+  height: 110px;
+  position: absolute;
+  top: 5%;
+  z-index: -1;
+  left: 100%;
+}
+
+
+
+
+
+
+
+
+/* CHECKBOX*/
+/* On mouse-over, add a grey background color */
+.mission-number:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .mission-number input:checked ~ .checkmark {
+    background-color: #333333;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .mission-number input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .mission-number .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  
+  
