@@ -11,14 +11,15 @@
 
 .box-menu{
     background-image: url( '../../assets/menu_box.png');
-   
-    height: auto;
-    width: auto;
+    min-height: 70vh;
+    
+    padding: 2vh;
+    background-position: left top;
     background-repeat: no-repeat;
-    position: relative;
-    top: 5%;
-    left: 10%;
-    max-width: 1298px;
+    margin-left: 2vw;
+    background-size: contain;
+    min-width: 700px;
+    
 }
 
 .btn-bar{
@@ -30,23 +31,59 @@
 }
 
 .btn-mounth{
-   background-color: blueviolet;
     opacity: 0.5;
     width: 106px;
-    height: 75px;
+    /* max-height: 75px; */
+    min-height: 35px;
+    height: 7vh;
 }
 
 
 .user-info{
-    background-color: chartreuse;
-    opacity: 0.5;
-    width: 100%;
-    height: 650px;
+   
+    
+    width: 96vw;
+    height: 97vh;
     padding: 25px;
+    display: flex;
+    justify-content: start;
+    
+}
+
+.user-info-item {
+    margin-top: 10vh;
+}
+
+.user-info-right{
+    margin-left: 5vw;
+}
+
+.campo-menu{
+    min-width: 30vw;
+    width: 45vw;
+    max-width: 500px;
+}
+
+.linha-texto-menu{
+    width: 353px;    
+    position: absolute;
+    margin-top: 5px;   
+    font-size: 20px;
+}
+
+b{
+    color: #54514E;
+    font-size: 25px;
 }
 
 .brasao{
-    background-color: #9B978F;
-    width: 314px;
-    height: 400px;
+   
+    min-height: 45vh;
+    height: 50vh;
+    align-self: center;
+    
+    background-color: #E2DACF;
+    border: 15px solid #938E87!important;
+    border-radius: 20px;
+    
 }

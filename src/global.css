@@ -41,3 +41,10 @@ h1{
     width: 100%;
     opacity: 0.9;
 }
+
+.campo{
+    height: 50px;
+    padding: 6px 15px;
+    border-radius: 50px;    
+    margin-bottom: 15px;
+}
