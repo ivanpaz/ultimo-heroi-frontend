@@ -1,89 +1,181 @@
-.container{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    z-index:-1;
-    background-color: #333333;
-}
 
-.box-menu{
-    background-image: url( '../../assets/menu_box.png');
-    min-height: 70vh;
+@media(min-width: 700px){
+
+    .container{
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        overflow:hidden;
+        z-index:-1;
+        background-color: #333333;
+    }
     
-    padding: 2vh;
-    background-position: left top;
-    background-repeat: no-repeat;
-    margin-left: 2vw;
-    background-size: contain;
-    min-width: 700px;
+    .box-menu{
+        background-image: url( '../../assets/menu_box.png');
+        min-height: 70vh;
+        
+        padding: 2vh;
+        background-position: left top;
+        background-repeat: no-repeat;
+        margin-left: 2vw;
+        background-size: contain;
+        min-width: 700px;
+        
+    }
+    
+    .btn-bar{
+        position: relative;
+        left: 224px;
+        display: flex;
+        flex-wrap: nowrap;
+        left: 1%;
+    }
+    
+    .btn-mounth{
+        opacity: 0.5;
+        width: 106px;
+        /* max-height: 75px; */
+        min-height: 35px;
+        height: 7vh;
+    }
+    
+    
+    .user-info{
+       
+        
+        width: 96vw;
+        height: 97vh;
+        padding: 25px;
+        display: flex;
+        justify-content: start;
+        
+    }
+    
+    .user-info-item {
+        margin-top: 10vh;
+    }
+    
+    .user-info-right{
+        margin-left: 5vw;
+    }
+    
+    .campo-menu{
+        min-width: 30vw;
+        width: 45vw;
+        max-width: 500px;
+    }
+    
+    .linha-texto-menu{
+        width: 353px;    
+        position: absolute;
+        margin-top: 5px;   
+        font-size: 20px;
+    }
+    
+    b{
+        color: #54514E;
+        font-size: 25px;
+    }
+    
+    .brasao{
+       
+        min-height: 45vh;
+        height: 50vh;
+        align-self: center;
+        
+        background-color: #E2DACF;
+        border: 15px solid #938E87!important;
+        border-radius: 20px;
+        
+    }
+
     
 }
 
-.btn-bar{
-    position: relative;
-    left: 224px;
-    display: flex;
-    flex-wrap: nowrap;
-    left: 1%;
-}
+@media(max-width: 699px){
 
-.btn-mounth{
-    opacity: 0.5;
-    width: 106px;
-    /* max-height: 75px; */
-    min-height: 35px;
-    height: 7vh;
-}
+    .container{
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        overflow:auto;
+        z-index:-1;
+        background-color: #333333;
+        height: fit-content;
+    }
 
+    .brasao{
+       
+        min-height: 45vh;
+        height: 50vh;
+        align-self: center;
+        
+        background-color: #E2DACF;
+        border: 15px solid #938E87!important;
+        border-radius: 20px;
+        
+    }
 
-.user-info{
-   
+    .user-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .user-info-item{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+    .campo-menu{
+        min-width: 30vw;
+        /* width: 45vw; */
+        max-width: 500px;
+        margin: 8px;
+    }
     
-    width: 96vw;
-    height: 97vh;
-    padding: 25px;
-    display: flex;
-    justify-content: start;
+    .linha-texto-menu{
+        width: 353px;    
+        position: absolute;
+        margin-top: 5px;   
+        font-size: 20px;
+    }
+
+    .box-menu{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .btn-bar{        
+        
+        display: flex;
+        flex-wrap: wrap;
+       
+        margin-bottom: 20px;
+        
+    }
     
+    .btn-mounth{
+        opacity: 0.5;
+        width: 125px;
+        /* max-height: 75px; */
+        min-height: 35px;
+        height: 50px;
+        background-color: blueviolet;
+        border: 5px solid #938E87!important;
+    }
 }
 
-.user-info-item {
-    margin-top: 10vh;
-}
 
-.user-info-right{
-    margin-left: 5vw;
-}
 
-.campo-menu{
-    min-width: 30vw;
-    width: 45vw;
-    max-width: 500px;
-}
 
-.linha-texto-menu{
-    width: 353px;    
-    position: absolute;
-    margin-top: 5px;   
-    font-size: 20px;
-}
 
-b{
-    color: #54514E;
-    font-size: 25px;
-}
 
-.brasao{
-   
-    min-height: 45vh;
-    height: 50vh;
-    align-self: center;
-    
-    background-color: #E2DACF;
-    border: 15px solid #938E87!important;
-    border-radius: 20px;
-    
-}
