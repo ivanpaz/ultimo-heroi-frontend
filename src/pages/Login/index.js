@@ -36,8 +36,9 @@ function Login(){
         try{
             console.log(name, password);
             const response = await api.post('login', {name, password});
-           console.log(response.data);
-           localStorage.setItem('userId', response.data.id);
+           
+            localStorage.setItem('userId', response.data._id);
+           
             localStorage.setItem('userName', response.data.name);
             localStorage.setItem('userCapitan', response.data.capitan);
             localStorage.setItem('userImage', response.data.image);
