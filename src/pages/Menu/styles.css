@@ -172,6 +172,13 @@
         background-color: blueviolet;
         border: 5px solid #938E87!important;
     }
+
+    .m1{
+        background-image: url( '../../assets/meses/1.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 

@@ -9,6 +9,11 @@
     background-color: #333333;
 }
 
+h1{
+  max-width: 270px;
+  font-size: initial;
+}
+
 .box-container{
       background-image:url('../../assets/PASTA_Prancheta.png');   
      
@@ -61,6 +66,7 @@
     width: 34.5vw;
     max-width: 390px;
     min-width: 300px;
+    z-index: 5;
 }
 
 .mission-content{
@@ -95,8 +101,17 @@
     
 }
 
-.anex-btn{
-    
+.anex-btn, .save-btn{
+  z-index: 5;
+  margin: 5px;
+}
+
+.save-btn{
+  background-image:url('../../assets/btn-salvar.png');
+  background-size: cover;
+  width: 55px;
+  height: 25px;
+  
 }
 
 textarea{
@@ -104,10 +119,15 @@ textarea{
     width: 23vw;
 }
 
+.mission-btns{
+  display: flex;
+  flex-direction: row;  
+  margin-top: -35px;
+}
+
 .btn-back{
   content:url('../../assets/btn-back.png');
-  width: 7vw;
-  
+  width: 7vw; 
   
 }
 
