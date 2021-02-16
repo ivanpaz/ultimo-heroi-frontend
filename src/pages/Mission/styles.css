@@ -1,4 +1,4 @@
-.container{
+.container-mission{
     position:absolute;
     top:0;
     bottom:0;
@@ -6,7 +6,7 @@
     right:0;
     overflow:auto;
     
-    background-color: #333333;
+    background-color: #EFE8DD;
 }
 
 h1{
@@ -15,7 +15,7 @@ h1{
 }
 
 .box-container{
-      background-image:url('../../assets/PASTA_Prancheta.png');   
+      background-image:url('../../assets/pasta_nova.png');   
      
       padding: 2vh;
       background-position: left top;
@@ -62,11 +62,9 @@ h1{
 
 
 .btns{
-  text-align: right;
-    width: 34.5vw;
-    max-width: 390px;
-    min-width: 300px;
-    z-index: 5;
+  text-align: left;
+  z-index: 5;
+  margin-left: 19vw;
 }
 
 .mission-content{
@@ -111,7 +109,7 @@ h1{
 .anex-btn{
   background-image:url('../../assets/btn-anex.png');
   background-size: cover;
-  width: 58px;
+  width: 60px;
   height: 25px;
 }
 

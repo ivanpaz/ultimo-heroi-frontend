@@ -42,7 +42,7 @@ function Mission(props){
 
     return(
 
-        <div className="container" >
+        <div className="container-mission" >
             
 
             <div className="box-container">
