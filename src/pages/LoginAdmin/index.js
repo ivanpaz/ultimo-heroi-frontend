@@ -22,7 +22,7 @@ var bodyStyle = {
 
   
 
-function Login(){
+function Admin(){
 
     const [isWrong, setIsWrong] = useState(false);
     const [name, setName] = useState('');
@@ -35,17 +35,11 @@ function Login(){
        
         try{
             console.log(name, password);
-            const capitan = name;
-            const response = await api.post('login', {capitan, password});
+            const user = name;
+            const response = await api.post('admin', {user, password});
            
-            localStorage.setItem('userId', response.data._id);
-           
-            localStorage.setItem('userName', response.data.name);
-            localStorage.setItem('userCapitan', response.data.capitan);
-            localStorage.setItem('userImage', response.data.image);
-            localStorage.setItem('userScore', response.data.score);
 
-            history.push('/menu');
+            history.push('/adminMenu');
             
            
         } catch (err){
@@ -61,7 +55,7 @@ function Login(){
         <div className="container" >
             <div className="background"style={bodyStyle}>
                 <div className="topo" />
-                <div className="formulario">
+                <div className="formulario-login">
                     <form action="" className="form-container" onSubmit={handleLogin}>
                         
                             
@@ -93,4 +87,4 @@ function Login(){
     );
 }
 
-export default Login;
+export default Admin;
