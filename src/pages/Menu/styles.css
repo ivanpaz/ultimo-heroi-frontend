@@ -52,6 +52,29 @@
         justify-content: start;
         
     }
+
+    .btn-ranking, .btn-data{
+        min-height: 10px;
+        height: 10vh;
+        align-self: center;
+       
+        background-position: center top;
+        background-repeat: no-repeat;
+       
+        background-size: contain;
+        min-width: 125px;        
+        margin-top: -385px;
+        margin-left: -1vw;
+
+    }
+
+    .btn-ranking{    
+        background-image: url( '../../assets/ranking.png');
+    }
+
+    .btn-data{    
+        background-image: url( '../../assets/data.png');
+    }
     
     .user-info-item {
         margin-top: 10vh;
@@ -81,13 +104,19 @@
     
     .brasao{
        
-        min-height: 45vh;
-        height: 50vh;
+        min-height: 230px;
+        height: 230px;
         align-self: center;
-        
         background-color: #E2DACF;
         border: 15px solid #938E87!important;
         border-radius: 20px;
+        background-position: left top;
+        background-repeat: no-repeat;
+        margin-left: 2vw;
+        background-size: contain;
+        min-width: 230px;
+        background-image: url( '../../assets/brasao_tst.png');
+        
         
     }
 
@@ -110,13 +139,19 @@
 
     .brasao{
        
-        min-height: 45vh;
+        min-height: 250px;
         height: 50vh;
         align-self: center;
-        
+        background-image: url( '../../assets/brasao_tst.png');
         background-color: #E2DACF;
         border: 15px solid #938E87!important;
         border-radius: 20px;
+        min-width: 250px;
+
+        background-position: left top;
+        background-repeat: no-repeat;
+       
+        background-size: contain;
         
     }
 

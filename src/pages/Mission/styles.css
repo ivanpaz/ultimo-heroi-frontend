@@ -81,6 +81,8 @@ h1{
   height: 73vh;
     overflow-y: auto;
     width: 32vw;
+    max-height: 330px;
+    max-width: 300px;
 }
 
 .mission-element {
@@ -106,10 +108,17 @@ h1{
   margin: 5px;
 }
 
+.anex-btn{
+  background-image:url('../../assets/btn-anex.png');
+  background-size: cover;
+  width: 58px;
+  height: 25px;
+}
+
 .save-btn{
   background-image:url('../../assets/btn-salvar.png');
   background-size: cover;
-  width: 55px;
+  width: 58px;
   height: 25px;
   
 }
@@ -129,6 +138,37 @@ textarea{
   content:url('../../assets/btn-back.png');
   width: 7vw; 
   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #DBCDA0; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9E9373; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #CEC198; 
 }
 
 

@@ -1,23 +1,22 @@
 import React, {useState, useEffect} from 'react';
 import './styles.css';
 import Element from './element.js';
+import Drive from './drive.js';
 import api from '../../services/api';
+import { gapi } from 'gapi-script';
 
 import {Link} from 'react-router-dom';
+import { getAllByTestId } from '@testing-library/react';
 
 function Mission(props){
 
     const [mounth, setMounth] = useState('');
     const [missions, setMissions] = useState([]);
 
-    useEffect(() => {
-        console.log(props.match.params.m);
+    useEffect(() => {    
+        console.log(process.env.REACT_APP_GOOGLE_DRIVE_API_KEY);   
         setMounth(props.match.params.m);
-        console.log(mounth);
-        console.log(props.match.params.m);
-        loadData();
-        
-        
+        loadData();    
         
       }, []);
 
@@ -25,16 +24,18 @@ function Mission(props){
 
       }
 
+
+
       async function loadData(){
-        const url = `missions/${props.match.params.m}`;
-        console.log(url);
+        //const url = `missions/${props.match.params.m}`;
+        
         const response = await api.get(`missions/${props.match.params.m}`,  {
             headers: {
               'Authorization': localStorage.getItem('userId')
             }
           });
 
-        console.log(response.data);
+        //console.log(response.data);
         setMissions(response.data);
         
       }
@@ -59,7 +60,8 @@ function Mission(props){
 
 
                         {missions.length>0 ? missions.map((missionItem,i) => 
-                            <Element numberMission='1' mission={missionItem}/>    
+                            <Element numberMission='1' mission={missionItem}/> 
+                           
                            
                         )
                     :
@@ -71,9 +73,6 @@ function Mission(props){
                     </div> 
                     
                 </div>
-
-                
-           
             </div>
 
             

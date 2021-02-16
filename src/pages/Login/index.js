@@ -74,7 +74,7 @@ function Login(){
 
                             <div className="campo  campo-login">
                                 <div className="linha-texto">Senha</div>
-                                <input type="text" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />                            
+                                <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />                            
                             </div>
                         
                         

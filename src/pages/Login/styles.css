@@ -25,6 +25,7 @@ h1{
     /* Center and scale the image nicely */
     background-position: top;
     background-repeat: no-repeat;
+    height: inherit;
 }
 
 .btn-login{
