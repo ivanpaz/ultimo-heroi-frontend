@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './styles.css';
 import Element from './element.js';
-import Drive from './drive.js';
 import api from '../../services/api';
-import { gapi } from 'gapi-script';
 
 import {Link} from 'react-router-dom';
 import { getAllByTestId } from '@testing-library/react';

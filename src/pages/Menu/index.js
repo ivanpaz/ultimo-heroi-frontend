@@ -34,6 +34,8 @@ function Menu() {
             localStorage.setItem('userScore', response.data.length * 100);
             setTemScore(localStorage.getItem('userScore'));
 
+            updateScore();
+
            
         } catch (err){
             //alert('falaha no login');  
@@ -48,6 +50,24 @@ function Menu() {
 
       const hideRanking = () =>{
         setShowGeralScore(false);
+      };
+
+      const updateScore = async () => {
+          console.log("xxxxxxxxx", teamScore);
+        try{
+            const response = await api.post(`time/updateScore`,  {
+                _id: localStorage.getItem('userId'),
+                score: teamScore
+              });
+           
+           console.log(response.data);
+
+           
+        } catch (err){
+            //alert('falaha no login');  
+
+        }
+
       };
 
    
