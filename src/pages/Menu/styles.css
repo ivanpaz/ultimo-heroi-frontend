@@ -169,15 +169,50 @@
         /* max-height: 75px; */
         min-height: 35px;
         height: 50px;
-        background-color: blueviolet;
-        border: 5px solid #938E87!important;
+        margin: 2px;
+    }
+
+    .m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8, .m9, .m10, .m11, .m12{
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .m1{
-        background-image: url( '../../assets/meses/1.png');
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-size: contain;
+        background-image: url( '../../assets/meses/1.png');        
+    }
+    .m2{
+        background-image: url( '../../assets/meses/2.png');        
+    }
+    .m3{
+        background-image: url( '../../assets/meses/3.png');        
+    }
+    .m4{
+        background-image: url( '../../assets/meses/4.png');        
+    }
+    .m5{
+        background-image: url( '../../assets/meses/5.png');        
+    }
+    .m6{
+        background-image: url( '../../assets/meses/6.png');        
+    }
+    .m7{
+        background-image: url( '../../assets/meses/7.png');        
+    }
+    .m8{
+        background-image: url( '../../assets/meses/8.png');        
+    }
+    .m9{
+        background-image: url( '../../assets/meses/9.png');        
+    }
+    .m10{
+        background-image: url( '../../assets/meses/10.png');        
+    }
+    .m11{
+        background-image: url( '../../assets/meses/11.png');        
+    }
+    .m12{
+        background-image: url( '../../assets/meses/12.png');        
     }
 }
 
