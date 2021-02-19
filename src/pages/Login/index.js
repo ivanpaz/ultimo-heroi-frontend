@@ -69,7 +69,7 @@ function Login(){
                         
                             <div className="campo campo-login">
                                 <div className="linha-texto">Matricula</div>
-                                <input type="text" placeholder="Nome do Capitão"  value={name} onChange={e => setName(e.target.value)}  />                            
+                                <input type="text" placeholder="No de Matricula"  value={name} onChange={e => setName(e.target.value)}  />                            
                             </div>
 
                             <div className="campo  campo-login">
