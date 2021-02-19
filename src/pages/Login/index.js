@@ -35,8 +35,8 @@ function Login(){
        
         try{
             console.log(name, password);
-            const capitan = name;
-            const response = await api.post('login', {capitan, password});
+            const matricula = name;
+            const response = await api.post('login', {matricula, password});
            
             localStorage.setItem('userId', response.data._id);
            
