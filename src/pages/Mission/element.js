@@ -67,6 +67,7 @@ function Element(props){
                 </div>
                 
             </div>
+            <div className="line"></div>
         </div>
     );
 

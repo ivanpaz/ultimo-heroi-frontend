@@ -84,7 +84,7 @@ h1{
 }
 
 .mission-element {
-    
+    margin-top: 15px;
   }
 
 .mission-number{
@@ -137,6 +137,12 @@ textarea{
   width: 7vw; 
   
 }
+
+.line{
+  max-width: 250px;
+  height: 5px;
+  border-bottom: 1px solid black;
+  }
 
 
 
