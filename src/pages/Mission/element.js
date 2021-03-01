@@ -26,13 +26,13 @@ function Element(props){
 
     const openDrive = () =>{
         console.log("Opne Drive");
-        window.open("https://drive.google.com/drive/folders/1IiNojOwVm-jYWQcf4MFGehQ0G9x0ge3d?usp=sharing", "_blank")
+        //window.open("https://drive.google.com/drive/folders/1IiNojOwVm-jYWQcf4MFGehQ0G9x0ge3d?usp=sharing", "_blank");
+        window.open("https://drive.google.com/drive/folders/1d_RlEcktbFHNFsJoONipEU5Z11RhEOCx?usp=sharing", "_blank");
     }
 
     
 
     async function UpdateMIssion(){
-        console.log("aaaa");
         const url = `missions/update`;
         console.log(props.mission._id);
         console.log(newDone);
