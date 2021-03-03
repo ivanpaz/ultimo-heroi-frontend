@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './styles.css';
 import Element from './element.js';
+import App from './Upload.js';
 import api from '../../services/api';
 
 import {Link} from 'react-router-dom';
@@ -49,7 +50,7 @@ function Mission(props){
                 <div className="right-area area">
                     <div className="btns">
                         <Link className="btn-back" to='/Menu' />
-                    </div>
+                    </div>                   
 
                    <div className="mission-content">
                     <div className="mission-mounth"><h1>MÊS {mounth}</h1> </div>
@@ -74,7 +75,7 @@ function Mission(props){
             </div>
 
             
-            
+            <App />
         </div>
     );
 

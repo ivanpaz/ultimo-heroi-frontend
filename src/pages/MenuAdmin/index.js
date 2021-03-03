@@ -96,13 +96,14 @@ function MenuAdmin() {
                     <div className="tabela">
                         <table class="w3-table w3-striped">
                             <thead>
-                                <td>Esquadrão</td>
-                                <td>Capitão</td>
-                                <td>Participou</td>
+                                <td className="team">Esquadrão</td>
+                                <td className="capitan">Capitão</td>
+                                <td className="feedback">Feedback</td>
+                                <td className="isDone">Participou</td>
                             </thead>
                             <tbody>
                             {tableData.map((missionItem,i) => 
-                                <Element id_externo={missionItem.team_id} feito={missionItem.done} toggleLoading={handleLoading}/>    
+                                <Element id_externo={missionItem.team_id} feito={missionItem.done} toggleLoading={handleLoading} feedback={missionItem.feedback}/>    
                             )}
                             
                             </tbody>
